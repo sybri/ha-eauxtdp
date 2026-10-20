@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connexion Eaux Terre de Provence",
-        "description": "Saisissez vos identifiants du portail abonné [portail.eauxtdp.fr](https://portail.eauxtdp.fr).",
+        "description": "Saisissez vos identifiants du portail abonné Eaux Terre de Provence.",
         "data": {
           "email": "Adresse e-mail",
           "password": "Mot de passe"
@@ -40,7 +40,7 @@
     "step": {
       "init": {
         "title": "Options de tarification et de synchronisation",
-        "description": "Configurez le mode de calcul du prix de l'eau (pour corriger l'écart de l'API `POICL_Price` avec la facture réelle) ainsi que la fréquence de mise à jour.",
+        "description": "Configurez le mode de calcul du prix de l'eau (pour corriger l'écart de l'API POICL_Price avec la facture réelle) ainsi que la fréquence de mise à jour.",
         "data": {
           "price_mode": "Mode de calcul du prix variable (hors abonnement)",
           "annual_subscription_ttc": "Abonnement annuel TTC (Eau + Assainissement)",

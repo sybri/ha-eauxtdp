@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Connect to Eaux Terre de Provence",
-        "description": "Enter your subscriber credentials for [portail.eauxtdp.fr](https://portail.eauxtdp.fr).",
+        "description": "Enter your subscriber credentials for the Eaux Terre de Provence portal.",
         "data": {
           "email": "Email address",
           "password": "Password"
