@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Eaux Terre de Provence",
+        "description": "Enter your subscriber credentials for [portail.eauxtdp.fr](https://portail.eauxtdp.fr).",
+        "data": {
+          "email": "Email address",
+          "password": "Password"
+        }
+      },
+      "select_contract": {
+        "title": "Select contract",
+        "description": "Multiple water contracts were found on your account. Select the one you want to monitor.",
+        "data": {
+          "contrat_id": "Water contract"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Eaux Terre de Provence",
+        "description": "The session or password for your Eaux Terre de Provence account has expired. Please enter your credentials.",
+        "data": {
+          "email": "Email address",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the Eaux Terre de Provence portal.",
+      "invalid_auth": "Invalid authentication (incorrect email or password).",
+      "no_contract": "No active contract found on this account.",
+      "unknown": "Unexpected error while communicating with the portal."
+    },
+    "abort": {
+      "already_configured": "This contract is already configured in Home Assistant.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Pricing and synchronization options",
+        "description": "Configure how the water price is calculated and the update frequency.",
+        "data": {
+          "price_mode": "Variable price calculation mode (excl. subscription)",
+          "annual_subscription_ttc": "Annual subscription incl. VAT (Water + Sanitation)",
+          "manual_variable_price_ttc": "Manual variable price incl. VAT excl. subscription (€/m³)",
+          "cost_stat_tariff": "Tariff used for Energy Dashboard cost statistics",
+          "update_interval_hours": "Update interval (hours)"
+        }
+      }
+    }
+  }
+}

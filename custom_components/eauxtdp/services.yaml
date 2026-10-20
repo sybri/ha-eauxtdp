@@ -1,0 +1,35 @@
+refresh:
+  name: Actualiser les données
+  description: Force une récupération immédiate de la télérelève, des factures et des règlements depuis le portail Eaux Terre de Provence.
+  fields:
+    contrat_id:
+      name: ID Contrat (optionnel)
+      description: Identifiant interne du contrat (ex. 16281). Si omis, tous les contrats configurés sont actualisés.
+      required: false
+      example: "16281"
+      selector:
+        text:
+
+import_history:
+  name: Importer l'historique des statistiques
+  description: Récupère l'historique des index de télérelève sur la période demandée et reconstruit les statistiques long terme (volume et coût) pour le Dashboard Énergie.
+  fields:
+    contrat_id:
+      name: ID Contrat (optionnel)
+      description: Identifiant interne du contrat (ex. 16281). Si omis, tous les contrats sont importés.
+      required: false
+      example: "16281"
+      selector:
+        text:
+    days:
+      name: Nombre de jours d'historique
+      description: Nombre de jours à récupérer dans le passé (par défaut 365 jours).
+      required: false
+      default: 365
+      selector:
+        number:
+          min: 7
+          max: 1825
+          step: 1
+          unit_of_measurement: jours
+          mode: box

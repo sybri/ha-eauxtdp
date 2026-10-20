@@ -1,0 +1,13 @@
+{
+  "domain": "eauxtdp",
+  "name": "Eaux Terre de Provence",
+  "codeowners": ["@sybri"],
+  "config_flow": true,
+  "dependencies": ["recorder"],
+  "documentation": "https://github.com/sybri/ha-eauxtdp",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/sybri/ha-eauxtdp/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

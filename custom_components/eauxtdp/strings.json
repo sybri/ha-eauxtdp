@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion Eaux Terre de Provence",
+        "description": "Saisissez vos identifiants du portail abonné [portail.eauxtdp.fr](https://portail.eauxtdp.fr).",
+        "data": {
+          "email": "Adresse e-mail",
+          "password": "Mot de passe"
+        }
+      },
+      "select_contract": {
+        "title": "Sélection du contrat",
+        "description": "Plusieurs contrats ont été trouvés sur votre compte. Sélectionnez celui que vous souhaitez suivre.",
+        "data": {
+          "contrat_id": "Contrat d'eau"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Ré-authentification Eaux Terre de Provence",
+        "description": "La session ou le mot de passe du compte Eaux Terre de Provence a expiré. Veuillez saisir vos identifiants.",
+        "data": {
+          "email": "Adresse e-mail",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter au portail Eaux Terre de Provence.",
+      "invalid_auth": "Identifiants invalides (e-mail ou mot de passe incorrect).",
+      "no_contract": "Aucun contrat actif n'a été trouvé sur ce compte.",
+      "unknown": "Erreur inattendue lors de la communication avec le portail."
+    },
+    "abort": {
+      "already_configured": "Ce contrat est déjà configuré dans Home Assistant.",
+      "reauth_successful": "La ré-authentification a réussi."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options de tarification et de synchronisation",
+        "description": "Configurez le mode de calcul du prix de l'eau (pour corriger l'écart de l'API `POICL_Price` avec la facture réelle) ainsi que la fréquence de mise à jour.",
+        "data": {
+          "price_mode": "Mode de calcul du prix variable (hors abonnement)",
+          "annual_subscription_ttc": "Abonnement annuel TTC (Eau + Assainissement)",
+          "manual_variable_price_ttc": "Prix variable manuel TTC hors abonnement (€/m³)",
+          "cost_stat_tariff": "Tarif utilisé pour la statistique de coût du Dashboard Énergie",
+          "update_interval_hours": "Intervalle de mise à jour (heures)"
+        }
+      }
+    }
+  }
+}
